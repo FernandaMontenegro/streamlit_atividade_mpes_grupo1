@@ -1,10 +1,8 @@
 #GRUPO 1 - JOÃO ANTONIO AMORIM; Washington Barbosa; Helivelton Barbosa; Fernanda Montenegro; Carlos Henrique; André Santos
 
-!pip install streamlit plotly kagglehub pandas numpy
 import streamlit as st
 import numpy as np
 import pandas as pd
-import kagglehub
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
@@ -16,8 +14,7 @@ st.title("🍺 Beer Consumption Analysis - São Paulo")
 # Download latest version
 @st.cache_data
 def load_data():
-    path = kagglehub.dataset_download("dongeorge/beer-consumption-sao-paulo")
-    df = pd.read_csv(path + '/Consumo_cerveja.csv')
+    df = pd.read_csv( './Consumo_cerveja.csv')
     return df
 
 df = load_data()
