@@ -1,6 +1,6 @@
 #GRUPO 1 - JOÃO ANTONIO AMORIM; Washington Barbosa; Helivelton Barbosa; Fernanda Montenegro; Carlos Henrique; André Santos
 
-
+pip install streamlit plotly kagglehub pandas numpy
 import streamlit as st
 import numpy as np
 import pandas as pd
